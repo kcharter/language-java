@@ -1,5 +1,5 @@
 name:           language-java
-version:        0.0.1
+version:        0.0.2
 cabal-version:  >= 1.2
 author:         Kevin Charter
 synopsis:       A library for reading, representing, and generating Java
@@ -7,12 +7,14 @@ synopsis:       A library for reading, representing, and generating Java
 build-type:     Simple
 
 library
-  exposed-modules: Language.Java
+  exposed-modules: Language.Java,
+                   Language.Java.AST.Lexical
   build-depends:   base >= 3,
                    containers >= 0.2.0.1,
-                   parallel >= 1.1.0.1,
+                   deepseq >= 1.1.0.0,
                    parsec >= 2.1.0.1,
-                   pretty >= 1.0.1.0
+                   pretty >= 1.0.1.0,
+                   text >= 0.7
   ghc-options:     -fwarn-incomplete-patterns
                    -fwarn-unused-imports
                    -- -prof -auto-all -caf-all
