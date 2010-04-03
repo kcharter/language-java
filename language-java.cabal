@@ -1,5 +1,5 @@
 name:           language-java
-version:        0.0.2
+version:        0.0.3
 cabal-version:  >= 1.2
 author:         Kevin Charter
 synopsis:       A library for reading, representing, and generating Java
